@@ -2,8 +2,14 @@ from random import choice
 
 # cosas que hay que hacer
 
-estudiar = ['mates', 'python', 'dormir']
+estudiar = [['mates', 'logic', 'algoritsm'],
+      ['lua', 'logic', 'gay'], 
+      ['python', 'simple', 'chill']]
 
-# escoger uno aleatorio
+# input mood
+print('waht mood are you in?')
+mood = input()
 
-print(choice(estudiar))
+for item in estudiar:
+    if item[1] == mood:
+        print(mood + 'estudiar: ' + item[0])
